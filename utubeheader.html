@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: none;
+            height: 4000px;
+           
+        }
+    
+        .main{
+
+           height: 55px;
+           display: flex;
+           flex-direction: row;
+           justify-content: space-between;
+           position: fixed;
+           top: 0;
+           left: 0;
+           right: 0;
+           padding-bottom: 5px;
+           padding-top: 8px;
+           border-bottom: 1px solid rgb(206, 202, 202);
+           background-color: white;
+        }
+        .div1{
+            width: 200px;
+            display: flex;
+            align-items: center;
+            margin-left: 10px;
+        }
+        .div2{
+            flex: 1;
+            margin-left: 0px;
+            margin-right: 5px;
+            max-width: 500px;
+            display: flex;
+            align-items: center;
+        }
+        .div3{
+            width: 350px;
+            display: flex;
+            align-items: center;
+        }
+        .logo{
+            height: 90px;
+            padding-left: 20px;
+        }
+        .search{
+            height: 35px;
+            width: 60px;
+            border: 1px solid black;
+            border-top-right-radius: 20px;
+            border-bottom-right-radius: 20px;
+            background-color: white;
+            margin-top: 3px;
+            margin-left: -1px;
+        }
+        .searchbar{
+            flex: 1;
+            height: 33px;
+            padding-left: 15px;
+            font-size: 19px;
+            border-top-left-radius: 20px;
+            border-bottom-left-radius: 20px;
+            border: 1px solid grey;
+            box-shadow: 5px;
+            box-shadow: inset 1px 2px 3px rgba(0, 0, 0, 0.05);
+        }
+        .searchbar::placeholder{
+            font-family: Roboto, Arial;
+            font-size: 15px;
+        }
+        button{
+            border: none;
+            background-color: white;
+        }
+        .micro{
+            height: 25px;
+            align-items: center;
+            background-color: #f0f0f0d5;
+            padding: 5px;
+            width: 25px;
+            border-radius:20px ;
+        }
+        .sr{
+            height: 35px;
+            width: 30px;
+            padding-left: 18px;
+            padding-right: 10px;
+            border-top-right-radius: 20px;
+            border-bottom-right-radius: 20px;
+            border: 1px solid grey;
+            margin-right: 20px;
+            margin-left: -1px;
+            background-color: #f0f0f0d5;
+        }
+        .menu{
+            height: 20px;
+            width: 30px;
+            margin-right: 10px; 
+        }
+        .create{
+            display: flex;
+            align-items: center;
+            height: 35px;
+            border-radius: 20px;
+            background-color: #f0f0f0d5;
+        }
+        .plus{
+            height: 30px;
+            width: 20px;
+            
+        }
+        .crea{
+            padding-left: 10px;
+            padding-right: 10px;
+            font-size: larger;
+            font-family: Roboto, Arial;
+        }
+        .vdeo{
+            height: 35px;
+            display: flex;
+            align-items: center;
+            margin-left: 20px;
+        }
+        .up{
+            height: 20px;
+            width: 25px;
+        }
+        .grid{
+            height: 35px;
+            display: flex;
+            align-items: center;
+            margin-left: 20px;
+        }
+        .apps{
+            height: 18px;
+            width: 25px;
+        }
+        .notif{
+            height: 35px;
+            display: flex;
+            align-items: center;
+            margin-left: 20px;
+        }
+        .bell{
+            width: 30px;
+            height: 25px;
+        }
+        .icon{
+            height: 35px;
+            display: flex;
+            align-items: center;
+            margin-left: 20px;
+        }
+        .pic{
+            height: 35px;
+            width: 35px;
+            border-radius: 20px;
+        }
+        .sidebar{
+            background-color:  white;
+            top: 69px;
+            border-right: 1px solid rgb(199, 191, 191);
+            left: 0;
+            bottom: 0;
+            width: 250px;
+            position: fixed;
+        }
+        
+    </style>
+</head>
+<body>
+
+    <div class="main">
+        <div class="div1">
+            <svg class="menu" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z"/></svg>
+            <img  class="logo" src="youtube-svgrepo-com.svg">
+        </div>
+        <div class="div2">
+            <input class="searchbar" type="text" placeholder="Search">
+            <svg  class="sr" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"/></svg>
+            <svg class="micro" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M192 0C139 0 96 43 96 96l0 160c0 53 43 96 96 96s96-43 96-96l0-160c0-53-43-96-96-96zM64 216c0-13.3-10.7-24-24-24s-24 10.7-24 24l0 40c0 89.1 66.2 162.7 152 174.4l0 33.6-48 0c-13.3 0-24 10.7-24 24s10.7 24 24 24l72 0 72 0c13.3 0 24-10.7 24-24s-10.7-24-24-24l-48 0 0-33.6c85.8-11.7 152-85.3 152-174.4l0-40c0-13.3-10.7-24-24-24s-24 10.7-24 24l0 40c0 70.7-57.3 128-128 128s-128-57.3-128-128l0-40z"/></svg>
+            
+        </div>
+        <div class="div3">
+            <button class="create"><svg class="plus" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 24 24">
+                <path fill-rule="evenodd" d="M 11 2 L 11 11 L 2 11 L 2 13 L 11 13 L 11 22 L 13 22 L 13 13 L 22 13 L 22 11 L 13 11 L 13 2 Z"></path>
+                </svg>
+                <div class="crea">Create</div>  
+            </button>
+            <button class="vdeo" ><svg  class="up" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M0 128C0 92.7 28.7 64 64 64l256 0c35.3 0 64 28.7 64 64l0 256c0 35.3-28.7 64-64 64L64 448c-35.3 0-64-28.7-64-64L0 128zM559.1 99.8c10.4 5.6 16.9 16.4 16.9 28.2l0 256c0 11.8-6.5 22.6-16.9 28.2s-23 5-32.9-1.6l-96-64L416 337.1l0-17.1 0-128 0-17.1 14.2-9.5 96-64c9.8-6.5 22.4-7.2 32.9-1.6z"/></svg></button>
+            <button class="grid"> <img class="apps" src="grid-view-svgrepo-com.svg"> </button>
+            <button class="notif"><img class="bell" src="icons8-notification-bell.svg" ></button>
+            <button class="icon"><img class="pic" src="images.jpg" ></button>
+        </div>
+    </div>
+    <div class="sidebar">sidebar</div>
+    <div><p style="padding-top: 500px;">helloooo</p></div>
+</body>
+</html>
